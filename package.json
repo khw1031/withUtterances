@@ -1,5 +1,5 @@
 {
-  "name": "withUtterance",
+  "name": "with-utterances",
   "version": "1.0.0",
   "description": "React HOC for Utterance comment widget",
   "main": "main.js",
