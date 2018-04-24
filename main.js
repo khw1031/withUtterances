@@ -1,1 +1,1 @@
-exports.withUtterance = require('./lib/index').default
+exports.withUtterances = require('./lib/index').default
