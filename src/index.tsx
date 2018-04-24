@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export default function withUtterance<P extends { location: { pathname: string } }>(
+export default function withUtterances<P extends { location: { pathname: string } }>(
   WrappedComponent: React.ComponentClass<P>,
   repo: string,
   issueTerm: string = location.pathname
