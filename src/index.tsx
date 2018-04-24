@@ -14,7 +14,7 @@ export default function withUtterances<P extends { location: { pathname: string 
       script.async = true
       script.setAttribute('repo', repo)
       const issue = issueTerm || document.location.pathname
-      script.setAttribute('issue-term', issueTerm)
+      script.setAttribute('issue-term', issue)
       this.wrappedComponent.current.appendChild(script)
     }
 
