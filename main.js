@@ -1,2 +1,1 @@
-const withUtterances = require('./lib/index').default
-exports.default = withUtterances
+module.exports = require('./lib/index').default
