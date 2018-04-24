@@ -1,6 +1,6 @@
 {
   "name": "with-utterances",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "React HOC for Utterance comment widget",
   "main": "main.js",
   "repository": "https://github.com/khw1031/withUtterances",
@@ -9,8 +9,12 @@
   "private": false,
   "keywords": [
     "React",
-    "Utterance",
-    "HOC"
+    "Utterances",
+    "HOC",
+    "Comment",
+    "GithubIssue",
+    "Gatsbyjs",
+    "Gatsby"
   ],
   "devDependencies": {
     "@types/react": "^16.3.12",
