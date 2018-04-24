@@ -28,5 +28,5 @@ class PostPage extends React.Component {
 export default withUtterances(PostPage, 'YOUR_REPO', {issue-term})
 ```
 
-please pass your github repo and issue-term as props.  
-if you are using `gatsby.js` and issue-term is not provided. `pathname` will be default issue-term.
+Pass your github repo and issue-term as props.  
+If issue-term is not provided. `pathname` will be default a issue-term.
