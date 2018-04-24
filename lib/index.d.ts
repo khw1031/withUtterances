@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import * as React from 'react';
-export default function withUtterance<P extends {
+export default function withUtterances<P extends {
     location: {
         pathname: string;
     };
