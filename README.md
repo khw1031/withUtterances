@@ -48,5 +48,5 @@ It will make your Utterances Widget to load slightly faster. <3
 
 ### PS. DEMO SITE
 
-[Demo Using withUtterance](https://khw1031.github.io)
+[Demo Using withUtterance](https://khw1031.github.io/posts/withUtterances)
 
