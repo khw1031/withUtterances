@@ -2,7 +2,8 @@ import * as React from 'react'
 
 export default function withUtterances<P extends { location: { pathname: string } }>(
   WrappedComponent: React.ComponentClass<P>,
-  repo: string
+  repo: string,
+  theme: string = 'github-light'
 ) {
   return class extends React.Component<P> {
     withUtterancesContainer: React.RefObject<HTMLDivElement> = React.createRef()
@@ -16,6 +17,7 @@ export default function withUtterances<P extends { location: { pathname: string 
       script.src = 'https://utteranc.es/client.js'
       script.async = true
       script.setAttribute('repo', repo)
+      script.setAttribute('theme', theme)
       script.setAttribute('issue-term', this.props.location.pathname || document.location.pathname)
       this.withUtterancesContainer.current.appendChild(script)
     }
