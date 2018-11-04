@@ -3,7 +3,8 @@ import * as React from 'react'
 export default function withUtterances<P extends { location: { pathname: string } }>(
   WrappedComponent: React.ComponentClass<P>,
   repo: string,
-  theme: string = 'github-light'
+  theme: string = 'github-light',
+  term: string = 'pathname'
 ) {
   return class extends React.Component<P> {
     withUtterancesContainer: React.RefObject<HTMLDivElement> = React.createRef()
@@ -18,7 +19,7 @@ export default function withUtterances<P extends { location: { pathname: string 
       script.async = true
       script.setAttribute('repo', repo)
       script.setAttribute('theme', theme)
-      script.setAttribute('issue-term', this.props.location.pathname || document.location.pathname)
+      script.setAttribute('issue-term', term)
       this.withUtterancesContainer.current.appendChild(script)
     }
 
