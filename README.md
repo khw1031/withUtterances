@@ -41,6 +41,10 @@ export default withUtterances(PostPage, 'YOUR_REPO')
 // Or to specify a theme
 
 export default withUtterances(PostPage, 'YOUR_REPO', 'github-dark')
+
+// Or to specfiy an issue term
+
+export default withUtterances(PostPage, 'YOUR_REPO', 'github-light', 'og:title')
 ```
 
 It uses your pathname as `issue-term`.
@@ -52,6 +56,14 @@ By default [Utterances](https://github.com/utterance/utterances) comes with two 
 - `github-dark` - A dark mode in the style of Github
 
 More themes can be added [with additional stylesheets](https://github.com/utterance/utterances/blob/master/CONTRIBUTING.md#theme-development).
+
+### Supported Issue Terms
+
+- `pathname` - Issue title which contains the path of the current page.
+- `url` - Issue title which contains the URL of the current page.
+- `title` - Issue title which contains the tab title of the current page.
+- `og:title` - Issue title which contains the Open Graph title meta.
+- `<serach term>` - Issue title which contains the given String.
 
 ### PS. preload and prefetch Applied
 
