@@ -3,7 +3,7 @@ export default function withUtterances<P extends {
     location: {
         pathname: string;
     };
-}>(WrappedComponent: React.ComponentClass<P>, repo: string, theme?: string): {
+}>(WrappedComponent: React.ComponentClass<P>, repo: string, theme?: string, term?: string): {
     new (props: Readonly<P>): {
         withUtterancesContainer: React.RefObject<HTMLDivElement>;
         componentDidMount(): void;
