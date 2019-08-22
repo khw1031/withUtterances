@@ -51,9 +51,13 @@ It uses your pathname as `issue-term`.
 
 #### Supported Themes
 
-By default [Utterances](https://github.com/utterance/utterances) comes with two choices for themes:
+By default [Utterances](https://github.com/utterance/utterances) comes with 6 choices for themes:
 - `github-light` - The normal Github style
 - `github-dark` - A dark mode in the style of Github
+- `github-dark-orange` - A custom dark orange mode in the style of Github
+- `icy-dark` - A custom blue glow theme
+- `dark-blue` - A custom blue and black theme
+- `photon-dark` - A custom dark grey and blue theme
 
 More themes can be added [with additional stylesheets](https://github.com/utterance/utterances/blob/master/CONTRIBUTING.md#theme-development).
 
