@@ -45,6 +45,10 @@ export default withUtterances(PostPage, 'YOUR_REPO', 'github-dark')
 // Or to specfiy an issue term
 
 export default withUtterances(PostPage, 'YOUR_REPO', 'github-light', 'og:title')
+
+
+// Or to specfiy label for newly created issues
+export default withUtterances(PostPage, 'YOUR_REPO', 'github-light', 'og:title', 'comments')
 ```
 
 It uses your pathname as `issue-term`.
