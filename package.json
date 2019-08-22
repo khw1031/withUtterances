@@ -33,7 +33,7 @@
   ],
   "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "rm ./lib/* && tsc",
+    "build": "rm -f ./lib/* && tsc",
     "prepublish": "npm run build"
   }
 }
