@@ -4,7 +4,8 @@ export default function withUtterances<P extends { location: { pathname: string 
   WrappedComponent: React.ComponentClass<P>,
   repo: string,
   theme: string = 'github-light',
-  term: string = 'pathname'
+  term: string = 'pathname',
+  label?: string
 ) {
   return class extends React.Component<P> {
     withUtterancesContainer: React.RefObject<HTMLDivElement> = React.createRef()
@@ -20,6 +21,7 @@ export default function withUtterances<P extends { location: { pathname: string 
       script.setAttribute('repo', repo)
       script.setAttribute('theme', theme)
       script.setAttribute('issue-term', term)
+      if (label) script.setAttribute('label', label)
       this.withUtterancesContainer.current.appendChild(script)
     }
 
